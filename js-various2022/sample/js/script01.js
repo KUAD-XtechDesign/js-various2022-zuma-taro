@@ -36,7 +36,7 @@ $(function(){
 //猫ボタンを押すと
 $("#oasis1_button").on("click",function(){
   //猫音源を鳴らす
-  audio('oasis1_audio')
+  audio('oasis1')
 
   $("#content").text("Dyou know what I mean")
 });
