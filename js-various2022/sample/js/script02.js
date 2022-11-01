@@ -47,6 +47,37 @@ $(function(){
     $("html, body").animate({scrollTop:separate*2}, 1000, "swing");
   })
 
+//猫ボタンを押すと
+$("#queenbee1_button").on("click",function(){
+  //猫音源を鳴らす
+  audio('queenbee1')
 
+});
+
+//ドアボタンを押すと
+$("#queenbee2_button").on("click",function(){
+  //ドア音源を鳴らす
+  audio('queenbee2')
+
+console.log('click')
+
+});
+
+$("#queenbee3_button").on("click",function(){
+  //ドア音源を鳴らす
+  audio('queenbee3_audio')
+
+
+});
 
 })
+
+
+function audio(animal) {
+
+document.getElementById(animal+'_audio').play(); //クリックしたら音を再生
+
+
+
+
+}

@@ -38,7 +38,6 @@ $("#oasis1_button").on("click",function(){
   //猫音源を鳴らす
   audio('oasis1')
 
-  $("#content").text("Dyou know what I mean")
 });
 
 //ドアボタンを押すと
@@ -48,14 +47,12 @@ $("#oasis2_button").on("click",function(){
 
 console.log('click')
 
-  $("#content").text("Rock roll star")
 });
 
 $("#oasis3_button").on("click",function(){
   //ドア音源を鳴らす
   audio('oasis3_audio')
 
-  $("#content").text("Supersonic")
 });
 
 })
