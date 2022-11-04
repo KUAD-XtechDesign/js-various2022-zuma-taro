@@ -48,7 +48,7 @@ console.log('click')
 
 $("#oasis3_button").on("click",function(){
   //ドア音源を鳴らす
-  audio('oasis3_audio')
+  audio('oasis3')
 
 });
 
