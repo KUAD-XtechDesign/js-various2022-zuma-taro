@@ -9,7 +9,7 @@ $(function(){
   }
 
   function contentAnime(){
-    setTimeout(backAnime,300);//0.3秒後backAnime実行
+    //0.3秒後backAnime実行
     setTimeout(personAnime,2000);//2秒後personAnime実行
     setTimeout(carAnime,2000);//2秒後carAnime実行
     setTimeout(foodAnime,3000);//3秒後foodAnime実行
@@ -17,9 +17,6 @@ $(function(){
   
   //以下のアニメはCSSでやってみる
   //ここではanimeクラスつけるだけ
-  function backAnime(){
-    $("#back").addClass("anime")
-  }
 
   function personAnime(){
     $("#person").addClass("anime")
@@ -63,3 +60,15 @@ function audio(animal) {
 document.getElementById(animal+'_audio').play(); //クリックしたら音を再生
 
 }
+
+let window_width = $(window).width();
+let window_center=window_width/2
+
+
+$(window).on('mousemove',function(e){
+  let duration = (e.clientX/window_width)*10;
+  if(duration<0.5){
+    duration=0.5;
+  }
+  $("#back").css({'animation-duration':duration+'s'})
+})

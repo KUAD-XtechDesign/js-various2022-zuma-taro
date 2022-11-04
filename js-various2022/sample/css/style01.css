@@ -127,3 +127,27 @@ header ul li{
   justify-content: center;
   top: 0;
 }
+
+#back{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  background-image: url(./images/oasis4.jpeg);
+  background-size: 200px auto;
+  animation-name: backmove;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+  animation-duration:3s;
+  
+}
+
+@keyframes backmove{
+  0%{
+    background-position-x: 0px;
+  }
+  100%{
+    background-position-x: -200px;
+  }
+}
