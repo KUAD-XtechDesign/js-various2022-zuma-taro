@@ -65,7 +65,7 @@ console.log('click')
 
 $("#queenbee3_button").on("click",function(){
   //ドア音源を鳴らす
-  audio('queenbee3_audio')
+  audio('queenbee3')
 
 
 });
