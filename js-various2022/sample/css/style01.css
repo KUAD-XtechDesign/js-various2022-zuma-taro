@@ -56,15 +56,6 @@ header ul li{
   overflow: hidden;
 }
 
-#back{
-  background-image: url(../images/oasis4.jpg);
-  background-size: cover;
-  background-position: center 100px;
-  top: 0;
-  top:90%;
-  transition: 2s all;
-}
-
 #back.anime{
   top: 0%;
 }
@@ -140,6 +131,7 @@ header ul li{
   animation-timing-function: linear;
   animation-iteration-count:infinite;
   animation-duration:3s;
+  background-repeat: repeat;
   
 }
 
